@@ -12,6 +12,7 @@ const Dialog = ({ backgroundImage,  onClose }) => {
     width: '100%',
     height: '100%',
     background: `url(${backgroundImage || 'https://images.pexels.com/photos/1721943/pexels-photo-1721943.jpeg'})`,
+    backgroundColor: 'white',
     backgroundRepeatX: 'no-repeat',
     backgroundRepeatY: 'no-repeat',
     backgroundSize: 'cover',
