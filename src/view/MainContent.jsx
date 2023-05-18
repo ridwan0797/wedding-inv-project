@@ -1,3 +1,4 @@
+import CoupleSection from "../component/CoupleSection";
 import FirstSection from "../component/FirstSection";
 import MessageSection from "../component/MessageSection";
 import '../index.css';
@@ -13,6 +14,10 @@ function MainContent() {
 
       <div>
         <MessageSection />
+      </div>
+
+      <div>
+        <CoupleSection />
       </div>
     </div>
   );
