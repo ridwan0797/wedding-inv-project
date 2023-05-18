@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 
-const SongCard = (props) => {
+const SongCard = () => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -17,9 +17,9 @@ const SongCard = (props) => {
   };
 
   return (
-    <div className="absolute bottom-5 left-2">
-      <div className="player round-button">
-        <div  className="text-sm" onClick={togglePlay}>
+    <div className="absolute bottom-7 left-7">
+      <div className="player shadow-md round-button" onClick={togglePlay}>
+        <div  className="text-lg">
           {isPlaying ? '🔇' : '🔊'}
         </div>
         <audio ref={audioRef} src="https://dl.dropboxusercontent.com/s/af7c00knl3mwl4v/sempurna.mp3" autoPlay loop />
