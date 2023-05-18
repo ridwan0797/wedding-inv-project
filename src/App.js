@@ -2,11 +2,19 @@ import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Dialog from './component/DialogBegin';
 import SongCard from './component/AudioPlayer';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MainContent from './view/MainContent';
 
 function App() {
   const [isDialogOpen, setIsDialogOpen] = useState(true);
+
+  useEffect(() => {
+    if (!isDialogOpen) {
+      // Dialog is closed, trigger audio play
+      const audioElement = document.getElementById('audioPlayer');
+      audioElement.play();
+    }
+  }, [isDialogOpen]);
 
   const handleDialogClose = () => {
     setIsDialogOpen(false);
@@ -22,8 +30,8 @@ function App() {
             />
           )}
 
-          {isDialogOpen ? null : <SongCard />}
-          
+          <SongCard />
+
           <MainContent />
       </div>
    </BrowserRouter>
