@@ -2,25 +2,16 @@ import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import queryString from 'query-string';
 
-
-
-
-
-
-const Dialog = ({ backgroundImage }) => {
+const Dialog = ({ backgroundImage,  onClose }) => {
   const [isOpen, setIsOpen] = useState(true);
-
   const location = useLocation();
   const parsed = queryString.parse(location.search);
   const to = parsed.to;
-
-
 
   const dialogStyle = {
     width: '100%',
     height: '100%',
     background: `url(${backgroundImage || 'https://images.pexels.com/photos/1721943/pexels-photo-1721943.jpeg'})`,
-    // backgroundColor: 'white',
     backgroundRepeatX: 'no-repeat',
     backgroundRepeatY: 'no-repeat',
     backgroundSize: 'cover',
@@ -50,14 +41,15 @@ const Dialog = ({ backgroundImage }) => {
     zIndex: 1,
   };
 
-
-
   const handleButtonClick = () => {
-    setIsOpen(false);
+    setIsOpen(false)
+    setTimeout(() => {
+      onClose();
+    }, 1000);
   };
 
   return (
-    <div style={dialogStyle}>
+    <div style={dialogStyle} className='z-40'>
       <div style={overlayStyle} />
       <div style={contentStyle}>
         <h1 className='font-serif text-xs md:text-sm lg:text-lg tracking-[5px] lg:tracking-[9px]'>Wedding Invitation</h1>
