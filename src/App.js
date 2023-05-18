@@ -2,19 +2,23 @@ import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Dialog from './component/DialogBegin';
 import SongCard from './component/AudioPlayer';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import MainContent from './view/MainContent';
 
 function App() {
   const [isDialogOpen, setIsDialogOpen] = useState(true);
+  const audioRef = useRef(null);
 
   useEffect(() => {
-    if (!isDialogOpen) {
-      // Dialog is closed, trigger audio play
-      const audioElement = document.getElementById('audioPlayer');
-      audioElement.play();
+    const audioElement = audioRef.current;
+
+    if (audioElement) {
+      audioElement.play().catch(error => {
+        // Handle play error
+        console.error('Failed to play audio:', error);
+      });
     }
-  }, [isDialogOpen]);
+  }, []);
 
   const handleDialogClose = () => {
     setIsDialogOpen(false);
@@ -23,18 +27,22 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App w-full">
-          {isDialogOpen && (
-            <Dialog
-              backgroundImage="https://images.pexels.com/photos/1721943/pexels-photo-1721943.jpeg"
-              onClose={handleDialogClose}
-            />
-          )}
+        {isDialogOpen && (
+          <Dialog
+            backgroundImage="https://images.pexels.com/photos/1721943/pexels-photo-1721943.jpeg"
+            onClose={handleDialogClose}
+          />
+        )}
 
-          <SongCard />
+        {!isDialogOpen && (
+          <>
+            <SongCard audioRef={audioRef} />
+          </>
+        )}
 
-          <MainContent />
+        <MainContent />
       </div>
-   </BrowserRouter>
+    </BrowserRouter>
   );
 }
 

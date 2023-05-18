@@ -1,16 +1,7 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-const SongCard = () => {
-  const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(true);
-
-  useEffect(() => {
-    const audioElement = audioRef.current;
-
-    if (audioElement && isPlaying) {
-      audioElement.play();
-    }
-  }, [isPlaying]);
+const SongCard = ({ audioRef }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const togglePlay = () => {
     const audioElement = audioRef.current;
@@ -24,12 +15,29 @@ const SongCard = () => {
     }
   };
 
+  useEffect(() => {
+    const audioElement = audioRef.current;
+
+    if (audioElement) {
+      audioElement.play().catch(error => {
+        // Handle play error
+        console.error('Failed to play audio:', error);
+      });
+      setIsPlaying(true);
+    }
+
+    return () => {
+      if (audioElement) {
+        audioElement.pause();
+        setIsPlaying(false);
+      }
+    };
+  }, [audioRef]);
+
   return (
-    <div className="absolute bottom-7 left-7">
-      <div className="player shadow-md round-button" onClick={togglePlay}>
-        <div className="text-lg">{isPlaying ? '🔇' : '🔊'}</div>
-        <audio id="audioPlayer" ref={audioRef} src="https://dl.dropboxusercontent.com/s/af7c00knl3mwl4v/sempurna.mp3" autoPlay loop />
-      </div>
+    <div className="player shadow-md round-button" style={{ position: 'fixed', bottom: '2rem', left: '1rem', zIndex: '9999' }} onClick={togglePlay}>
+      <div className="text-lg">{isPlaying ? '🔇' : '🔊'}</div>
+      <audio ref={audioRef} src="https://dl.dropboxusercontent.com/s/af7c00knl3mwl4v/sempurna.mp3" loop />
     </div>
   );
 };
