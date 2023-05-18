@@ -8,7 +8,7 @@ function FirstSection() {
   const targetDate = new Date('2023-05-27T00:00:00').getTime(); // Tanggal target (YYYY-MM-DDTHH:mm:ss)
 
   return (
-    <div className="w-full h-full md:h-[2000px] lg:h-screen">
+    <div className="w-full h-full md:h-max lg:h-screen">
       <div className="mx-2 lg:mx-12 mt-6 lg:mt-0 h-full flex flex-col md:flex-col lg:flex-row gap-2 lg:gap-12">
         <div className="flex-grow lg:flex-none w-full lg:w-[50%] ">
           <div className="flex flex-col justify-center my-6 lg:my-28 gap-0 ml-0 lg:ml-32">
@@ -36,19 +36,19 @@ function FirstSection() {
           </div>
         </div>
 
-        <div className="lg:flex-grow my-2 lg:my-12">
-          <div className=' w-full h-full relative'>
+        <div className="lg:flex-grow my-2 lg:my-12 flex justify-center">
+          <div className=' w-full h-full relative' style={{maxWidth: '480px'}} >
             <div className='absolute bottom-0'>
               <img src={MAIN} alt='icon' />
             </div>
 
-            <div className='absolute top-0 right-7'>
+            <div className='absolute top-0 right-7' >
               <img src={SECOND} alt='icon' />
             </div>
 
             <div className='w-full h-full flex justify-center align-middle'>
               <div className='flex mx-6 lg:mx-0 my-14 lg:my-14 shadow-xl bg-white z-10'>
-                <img className='m-1 lg:m-6' src='https://images.pexels.com/photos/1587042/pexels-photo-1587042.jpeg' alt='wedding' />
+                <img className='m-1 lg:m-6' style={{maxWidth: '480px'}} src='https://images.pexels.com/photos/1587042/pexels-photo-1587042.jpeg' alt='wedding' />
               </div>
             </div>
           </div>
