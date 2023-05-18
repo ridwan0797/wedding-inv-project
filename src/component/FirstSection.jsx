@@ -5,7 +5,7 @@ import SECOND from '../assets/flower-secondary.png'
 import Countdown from './CountdownTime';
 
 function FirstSection() {
-  const targetDate = new Date('2023-07-30T00:00:00').getTime(); // Tanggal target (YYYY-MM-DDTHH:mm:ss)
+  const targetDate = new Date('2023-05-27T00:00:00').getTime(); // Tanggal target (YYYY-MM-DDTHH:mm:ss)
 
   return (
     <div className="w-full h-full md:h-[2000px] lg:h-screen">
