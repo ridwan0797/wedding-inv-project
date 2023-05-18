@@ -21,7 +21,7 @@ function FirstSection() {
                 Bayu & Wulan
               </div>
 
-              <div className='mt-2 lg:mt-2 text-center lg:text-left text-xl lg:text-xl font-sans text-gray-500'>
+              <div className='ml-5 lg:ml-0 mt-2 lg:mt-2 text-center lg:text-left text-xs lg:text-xl font-sans text-gray-500'>
                 WE ARE GETTING MARRIED ON SATURDAY 27 MEI 2023
               </div>
 
