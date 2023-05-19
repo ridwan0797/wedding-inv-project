@@ -2,6 +2,7 @@ import CoupleSection from "../component/CoupleSection";
 import DetailSection from "../component/DetailSection";
 import FirstSection from "../component/FirstSection";
 import GallerySection from "../component/GallerySection";
+import LastSection from "../component/LastSection";
 import MessageSection from "../component/MessageSection";
 import '../index.css';
 
@@ -28,6 +29,10 @@ function MainContent() {
 
       <div>
         <GallerySection />
+      </div>
+
+      <div>
+        <LastSection />
       </div>
     </div>
   );
