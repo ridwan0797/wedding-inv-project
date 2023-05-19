@@ -1,5 +1,6 @@
 import CoupleSection from "../component/CoupleSection";
 import FirstSection from "../component/FirstSection";
+import GallerySection from "../component/GallerySection";
 import MessageSection from "../component/MessageSection";
 import '../index.css';
 
@@ -18,6 +19,10 @@ function MainContent() {
 
       <div>
         <CoupleSection />
+      </div>
+
+      <div>
+        <GallerySection />
       </div>
     </div>
   );
