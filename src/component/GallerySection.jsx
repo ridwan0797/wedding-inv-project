@@ -11,28 +11,28 @@ function GallerySection({backgroundImage}) {
 
         <div className="grid grid-cols-3 md:grid-cols-4 gap-2 mx-4">
           <div>
-            <img className="h-auto max-w-full " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
+            <img className="h-auto max-w-full " src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="" />
+            <img className="h-auto max-w-full " src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="" />
+            <img className="h-auto max-w-full " src="https://images.pexels.com/photos/219776/pexels-photo-219776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="" />
+            <img className="h-auto max-w-full " src="https://images.pexels.com/photos/8459434/pexels-photo-8459434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="" />
+            <img className="h-auto max-w-full " src="https://images.pexels.com/photos/931796/pexels-photo-931796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg" alt="" />
+            <img className="h-auto max-w-full " src="https://images.pexels.com/photos/13150681/pexels-photo-13150681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg" alt="" />
+            <img className="h-auto max-w-full " src="https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
           </div>
           <div>
-            <img className="h-auto max-w-full " src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg" alt="" />
+            <img className="h-auto max-w-full " src="https://images.pexels.com/photos/16561194/pexels-photo-16561194/free-photo-of-mision-lago-estate-wedding.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
           </div>
         </div>
       </div>
