@@ -29,8 +29,10 @@ function CoupleSection() {
                     <div className="flex-grow flex justify-center h-max">
                       <div className="flex flex-col w-full">
                         <div className="w-full h-max flex flex-row justify-center">
-                          <div className="rounded-image">
-                            <img className="w-[250px] h-full" src='https://images.pexels.com/photos/1578877/pexels-photo-1578877.jpeg' alt='bride' />
+                          <div className="rounded-border">
+                            <div className="image-container">
+                              <img className="rounded-image" src='https://images.pexels.com/photos/1578877/pexels-photo-1578877.jpeg' alt='bride' />
+                            </div>
                           </div>
                         </div>
                       
@@ -43,8 +45,10 @@ function CoupleSection() {
                     <div className="flex-grow flex justify-center h-max mb-5">
                       <div className="flex flex-col w-full">
                         <div className="w-full flex flex-row justify-center">
-                          <div className="rounded-image">
-                            <img className="w-[250px] h-full" src='https://images.pexels.com/photos/962356/pexels-photo-962356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='bride' />
+                          <div className="rounded-border">
+                            <div className="image-container">
+                              <img className="rounded-image" src='https://images.pexels.com/photos/962356/pexels-photo-962356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='bride' />
+                            </div>
                           </div>
                         </div>
 
