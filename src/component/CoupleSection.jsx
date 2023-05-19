@@ -4,9 +4,9 @@ import BORDER from '../assets/border.png'
 function CoupleSection() {
   
   return (
-    <div className="w-full h-max lg:h-[1060px] flex justify-center items-center">
+    <div className="w-full h-max lg:h-[1100px] flex justify-center items-center">
       <div className="w-[85%] h-[80%] shadow-2xl relative">
-        <div className="absolute top-3 lg:top-0 w-auto"><img src={BORDER} alt='border' /></div>
+        <div className="absolute top-3 lg:top-2 w-auto"><img src={BORDER} alt='border' /></div>
         <div className="absolute bottom-1 lg:bottom-0 w-auto"><img src={BORDER} alt='border' /></div>
 
         <div className="w-full h-auto flex mt-2 lg:mt-2">
@@ -38,7 +38,7 @@ function CoupleSection() {
                       </div>
                     </div>
 
-                    <div className="flex-grow flex justify-center h-max">
+                    <div className="flex-grow flex justify-center h-max mb-5">
                       <div className="flex flex-col w-full">
                         <div className="w-full h-[400px] flex flex-row justify-center">
                           <img className="w-[250px] h-full" src='https://i.pinimg.com/564x/f2/90/dc/f290dc4fef4de92bd62e9c7ed14951c5.jpg' alt='bride' />
