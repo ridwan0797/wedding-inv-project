@@ -1,3 +1,4 @@
+import ButtonTop from "../component/ButtonTop";
 import CoupleSection from "../component/CoupleSection";
 import DetailSection from "../component/DetailSection";
 import FirstSection from "../component/FirstSection";
@@ -34,6 +35,9 @@ function MainContent() {
       <div>
         <LastSection />
       </div>
+
+      
+      <ButtonTop />
     </div>
   );
 }
