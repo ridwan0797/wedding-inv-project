@@ -59,16 +59,15 @@ function DetailSection({backgroundImage}) {
       </div>
 
       <div className="w-full h-[800px] mt-16 justify-center items-center flex md:hidden lg:hidden" style={{backgroundColor: '#a3888c69'}}>
-        <div className='bg-white w-[90%] h-[500px] flex flex-col'>
-          <div
-            data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out" 
-            className='flex-none h-[35%] bg-orange-300' 
-            style={bgCaw}
-          >
+        <div 
+          className='bg-white w-[90%] h-[500px] flex flex-col'
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out" 
+        >
+          <div style={bgCaw}>
 
           </div>
 
