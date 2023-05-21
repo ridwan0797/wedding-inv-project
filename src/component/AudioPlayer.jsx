@@ -24,7 +24,7 @@ const SongCard = ({ audioRef }) => {
     const audioElement = audioRef.current;
 
     if (isMobile()) {
-      setIsPlaying(true)
+      setIsPlaying(false)
     }
 
     if (audioElement) {
