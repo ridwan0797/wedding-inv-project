@@ -54,4 +54,9 @@ const SongCard = ({ audioRef }) => {
   return (
     <div className="player shadow-md round-button" style={{ position: 'fixed', bottom: '2rem', left: '1rem', zIndex: '9999' }} onClick={togglePlay}>
       <div className="text-lg">{isPlaying ? '🔇' : '🔊'}</div>
-      <audio ref={audioRef} src="
+      <audio ref={audioRef} src="https://dl.dropboxusercontent.com/s/af7c00knl3mwl4v/sempurna.mp3" loop />
+    </div>
+  );
+};
+
+export default SongCard;
