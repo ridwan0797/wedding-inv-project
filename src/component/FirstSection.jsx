@@ -3,6 +3,7 @@ import BOTTOM from '../assets/bottom.png'
 import MAIN from '../assets/flower-main.png'
 import SECOND from '../assets/flower-secondary.png'
 import Countdown from './CountdownTime';
+import Bg from '../assets/bg-core.jpg'
 
 function FirstSection() {
   const targetDate = new Date('2023-05-27T00:00:00').getTime(); // Tanggal target (YYYY-MM-DDTHH:mm:ss)
@@ -22,7 +23,7 @@ function FirstSection() {
               </div>
 
               <div className='ml-5 lg:ml-0 mt-2 lg:mt-2 text-center lg:text-left text-xs lg:text-xl font-sans text-gray-500'>
-                WE ARE GETTING MARRIED ON SATURDAY 27 MEI 2023
+              KAMI AKAN MENIKAH PADA HARI SABTU TANGGAL 27 MEI 2023
               </div>
 
               <div>
@@ -48,7 +49,7 @@ function FirstSection() {
 
             <div className='w-auto h-full flex justify-center align-middle'>
               <div className='flex mx-6 lg:mx-0 my-14 lg:my-14 shadow-xl bg-white z-10'>
-                <img className='m-1 lg:m-6' style={{minWidth: '300px'}} src='https://images.pexels.com/photos/1587042/pexels-photo-1587042.jpeg' alt='wedding' />
+                <img className='m-1 lg:m-6' style={{minWidth: '300px'}} src={ Bg || 'https://images.pexels.com/photos/1587042/pexels-photo-1587042.jpeg'} alt='wedding' />
               </div>
             </div>
           </div>

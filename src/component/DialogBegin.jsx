@@ -53,13 +53,13 @@ const Dialog = ({ backgroundImage,  onClose }) => {
     <div style={dialogStyle} className='z-40'>
       <div style={overlayStyle} />
       <div style={contentStyle}>
-        <h1 className='font-serif text-xs md:text-sm lg:text-lg tracking-[5px] lg:tracking-[9px]'>Wedding Invitation</h1>
+        <h1 className='font-serif text-xs md:text-sm lg:text-lg tracking-[5px] lg:tracking-[9px]'>Undangan Pernikahan</h1>
         <h1 className='text-wedding text-[65px] md:text-[75px] lg:text-[100px] my-10'>Bayu & Wulan</h1>
-        <h1 className='text-lg font-serif italic'>Dear, {to || 'Invited Guests'}</h1>
+        <h1 className='text-lg font-serif italic'>Dear, {to || 'Tamu Undangan'}</h1>
         
         <div>
           <button className='buttonWelcome mt-5' onClick={handleButtonClick}>
-            Click Here To Continue
+            Buka Undangan di sini
           </button>
         </div>
       </div>

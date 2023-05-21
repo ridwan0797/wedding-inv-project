@@ -30,22 +30,22 @@ const Countdown = ({ targetDate }) => {
     <div className='text-gray-500 font-serif text-3xl md:text-4xl lg:text-7xl flex flex-row justify-center lg:justify-start mt-4 lg:mt-12 gap-4 lg:gap-16'>
       <div className='flex flex-col gap-3'>
         <div>{countdown.days}</div> 
-        <div className='font-sans text-sm lg:text-2xl'>Days</div>
+        <div className='font-sans text-sm lg:text-2xl'>Hari</div>
       </div>
 
       <div className='flex flex-col gap-3'>
         <div>{countdown.hours}</div> 
-        <div className='font-sans text-sm lg:text-2xl'>Hours</div>
+        <div className='font-sans text-sm lg:text-2xl'>Jam</div>
       </div>
 
       <div className='flex flex-col gap-3'>
         <div>{countdown.minutes}</div> 
-        <div className='font-sans text-sm lg:text-2xl'>Minutes</div>
+        <div className='font-sans text-sm lg:text-2xl'>Menit</div>
       </div>
       
       <div className='flex flex-col gap-3'>
         <div>{countdown.seconds}</div> 
-        <div className='font-sans text-sm lg:text-2xl'>Seconds</div>
+        <div className='font-sans text-sm lg:text-2xl'>Detik</div>
       </div>
     </div>
   );

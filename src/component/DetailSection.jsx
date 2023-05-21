@@ -19,18 +19,18 @@ function DetailSection({backgroundImage}) {
         <div className='m-32 w-full h-[500px] bg-red-300 flex justify-end' style={bgCaw}>
           <div className='m-5 w-[400px] bg-white flex items-center justify-center'>
             <div>
-              <SectionTitle title={'Reception'} />
+              <SectionTitle title={'Resepsi'} />
 
               <div className='mt-5 font-serif text-gray-500'>
-                <div>Saturday, 27 Mei 2023</div>
+                <div>Sabtu, 27 Mei 2023</div>
                 <div>10.00 - 15.00</div>
 
-                <div className='mt-4'>4517 Washington Ave.</div>
-                <div>Manchester, Kentucky 39876.</div>
+                <div className='mt-4'>4517 Villa Kenangan.</div>
+                <div>Surade, Kabupaten Sukabumi 39876.</div>
               </div>
 
               <div className='font-serif underline mt-5 cursor-pointer' style={{color: '#A3888C'}}>
-                See Location
+                Lihat Lokasi
               </div>
             </div>
           </div>
@@ -49,15 +49,15 @@ function DetailSection({backgroundImage}) {
               <SectionTitle title={'Reception'} />
 
               <div className='mt-5 font-serif text-gray-500'>
-                <div>Saturday, 27 Mei 2023</div>
+                <div>Sabtu, 27 Mei 2023</div>
                 <div>10.00 - 15.00</div>
 
-                <div className='mt-4'>4517 Washington Ave.</div>
-                <div>Manchester, Kentucky 39876.</div>
+                <div className='mt-4'>Surade, Kabupaten Sukabumi 39876</div>
+                <div>Surade, Kabupaten Sukabumi 39876.</div>
               </div>
 
               <div className='font-serif underline mt-5 cursor-pointer' style={{color: '#A3888C'}}>
-                See Location
+                Lihat Lokasi
               </div>
             </div>
           </div>

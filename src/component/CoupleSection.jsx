@@ -1,5 +1,7 @@
 import SectionTitle from "./SectionTitle";
-import BORDER from '../assets/border.png'
+import BORDER from '../assets/border.png';
+import GROOM from '../assets/groom.jpg';
+import BRIDE from '../assets/bride.jpg';
 
 function CoupleSection() {
   
@@ -16,7 +18,7 @@ function CoupleSection() {
                 <div className="flex flex-col">
                   <div>
                     <div>
-                      <SectionTitle title={'Bride & Groom'} />
+                      <SectionTitle title={'Pengantin'} />
                     </div>
                     <div className="font-serif text-xs md:text-sm lg:text-xl mt-5 text-gray-500">
                       <div>Assalamu’alaikum Warahmatullahi Wabarakatuh</div>
@@ -31,7 +33,7 @@ function CoupleSection() {
                         <div className="w-full h-max flex flex-row justify-center">
                           <div className="rounded-border">
                             <div className="image-container">
-                              <img className="rounded-image" src='https://images.pexels.com/photos/1578877/pexels-photo-1578877.jpeg' alt='bride' />
+                              <img className="rounded-image" src={BRIDE || 'https://images.pexels.com/photos/1578877/pexels-photo-1578877.jpeg'} alt='bride' />
                             </div>
                           </div>
                         </div>
@@ -47,7 +49,7 @@ function CoupleSection() {
                         <div className="w-full flex flex-row justify-center">
                           <div className="rounded-border">
                             <div className="image-container">
-                              <img className="rounded-image" src='https://images.pexels.com/photos/962356/pexels-photo-962356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='bride' />
+                              <img className="rounded-image" src={GROOM || 'https://images.pexels.com/photos/962356/pexels-photo-962356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} alt='bride' />
                             </div>
                           </div>
                         </div>
