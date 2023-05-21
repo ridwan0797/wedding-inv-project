@@ -49,9 +49,11 @@ function DetailSection({backgroundImage}) {
                 <div>Surade, Kabupaten Sukabumi 39876.</div>
               </div>
 
-              <a href={googleMapUrl} target="_blank" rel="noopener noreferrer" className='font-serif underline mt-5 cursor-pointer' style={{color: '#A3888C'}}>
-                Lihat Lokasi
-              </a>
+              <div className='font-serif underline mt-12 cursor-pointer'>
+                <a href={googleMapUrl} target="_blank" rel="noopener noreferrer" style={{color: '#A3888C'}}>
+                  Lihat Lokasi
+                </a>
+              </div>
             </div>
           </div>
         
@@ -83,9 +85,11 @@ function DetailSection({backgroundImage}) {
                 <div>Surade, Kabupaten Sukabumi 39876.</div>
               </div>
 
-              <a href={googleMapUrl} target="_blank" rel="noopener noreferrer" className='font-serif underline mt-5 cursor-pointer' style={{color: '#A3888C'}}>
-                Lihat Lokasi
-              </a>
+              <div className='font-serif underline mt-12 cursor-pointer'>
+                <a href={googleMapUrl} target="_blank" rel="noopener noreferrer" style={{color: '#A3888C'}}>
+                  Lihat Lokasi
+                </a>
+              </div>
             </div>
           </div>
         </div>
