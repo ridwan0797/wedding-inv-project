@@ -75,7 +75,7 @@ function DetailSection({backgroundImage}) {
 
           <div className='flex-grow'>
             <div>
-              <SectionTitle title={'Reception'} />
+              <SectionTitle title={'Resepsi'} />
 
               <div className='mt-5 font-serif text-gray-500'>
                 <div>Sabtu, 27 Mei 2023</div>
