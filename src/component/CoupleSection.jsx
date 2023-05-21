@@ -1,9 +1,18 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 import SectionTitle from "./SectionTitle";
 import BORDER from '../assets/border.png';
 import GROOM from '../assets/groom.jpg';
 import BRIDE from '../assets/bride.jpg';
 
 function CoupleSection() {
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   
   return (
     <div className="w-full h-max lg:h-[875px] flex justify-center items-center">
@@ -28,7 +37,14 @@ function CoupleSection() {
                   </div>
 
                   <div className="w-full flex flex-col md:flex-col lg:flex-row gap-10 lg:gap-3  mt-6 lg:mt-16">
-                    <div className="flex-grow flex justify-center h-max">
+                    <div 
+                      className="flex-grow flex justify-center h-max" 
+                      data-aos="fade-right"
+                      data-aos-offset="200"
+                      data-aos-delay="100"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-in-out"
+                    >
                       <div className="flex flex-col w-full">
                         <div className="w-full h-max flex flex-row justify-center">
                           <div className="rounded-border">
@@ -44,7 +60,14 @@ function CoupleSection() {
                       </div>
                     </div>
 
-                    <div className="flex-grow flex justify-center h-max mb-5">
+                    <div 
+                      className="flex-grow flex justify-center h-max mb-5"
+                      data-aos="fade-left"
+                      data-aos-offset="200"
+                      data-aos-delay="300"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-in-out"
+                    >
                       <div className="flex flex-col w-full">
                         <div className="w-full flex flex-row justify-center">
                           <div className="rounded-border">

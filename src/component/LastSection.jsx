@@ -1,7 +1,15 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 import React from 'react';
 import BOTTOM from '../assets/bottom.png'
 
 const LastSection = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     
     <div className='mt-[90px]'>
@@ -11,7 +19,14 @@ const LastSection = () => {
             Terima Kasih
           </div>
           
-          <div className='mt-5 '>
+          <div 
+            className='mt-5'
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out" 
+          >
             <p className="invitation-message">
               Merupakan suatu kehormatan dan kebahagiaan bagi kami <br />
               apabila Anda, <br />

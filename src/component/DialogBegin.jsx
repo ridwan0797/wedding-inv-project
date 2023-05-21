@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import queryString from 'query-string';
 
-const Dialog = ({ backgroundImage,  onClose }) => {
+import BGDIALOG from '../assets/bg-dialog.jpeg'
+
+const Dialog = ({ onClose }) => {
   const [isOpen, setIsOpen] = useState(true);
   const location = useLocation();
   const parsed = queryString.parse(location.search);
@@ -11,7 +13,7 @@ const Dialog = ({ backgroundImage,  onClose }) => {
   const dialogStyle = {
     width: '100%',
     height: '100%',
-    background: `url(${backgroundImage || 'https://images.pexels.com/photos/1721943/pexels-photo-1721943.jpeg'})`,
+    background: `url(${BGDIALOG || 'https://images.pexels.com/photos/1094995/pexels-photo-1094995.jpeg?auto=compress&cs=tinysrgb&w=1600'})`,
     backgroundColor: 'white',
     backgroundRepeatX: 'no-repeat',
     backgroundRepeatY: 'no-repeat',

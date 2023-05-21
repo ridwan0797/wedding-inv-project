@@ -1,12 +1,20 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 import TOP from '../assets/top.png'
 import BOTTOM from '../assets/bottom.png'
 import MAIN from '../assets/flower-main.png'
 import SECOND from '../assets/flower-secondary.png'
-import Countdown from './CountdownTime';
+import Countdown from './CountdownTime'
 import Bg from '../assets/bg-core.jpg'
 
 function FirstSection() {
   const targetDate = new Date('2023-05-27T00:00:00').getTime(); // Tanggal target (YYYY-MM-DDTHH:mm:ss)
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
 
   return (
     <div className="w-full h-full md:h-max lg:h-max">
@@ -17,7 +25,14 @@ function FirstSection() {
               <img src={TOP} alt={'icon'} />
             </div>
 
-            <div className='my-7 md:my-16 lg:my-24'>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out" 
+              className='my-7 md:my-16 lg:my-24'
+            >
               <div className='text-5xl md:text-7xl lg:text-[100px] text-center lg:text-left text-wedding color-core' style={{color: '#A3888C'}}>
                 Bayu & Wulan
               </div>
