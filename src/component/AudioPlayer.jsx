@@ -3,6 +3,11 @@ import React, { useEffect, useState } from 'react';
 const SongCard = ({ audioRef }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
+  const isMobile = () => {
+    const userAgent = navigator.userAgent;
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+  };
+
   const togglePlay = () => {
     const audioElement = audioRef.current;
 
@@ -17,6 +22,10 @@ const SongCard = ({ audioRef }) => {
 
   useEffect(() => {
     const audioElement = audioRef.current;
+
+    if (isMobile()) {
+      setIsPlaying(true)
+    }
 
     if (audioElement) {
       audioElement.play().catch(error => {
