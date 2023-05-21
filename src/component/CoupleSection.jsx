@@ -54,9 +54,9 @@ function CoupleSection() {
                           </div>
                         </div>
                       
-                        <div className="text-wedding text-5xl mt-5"  style={{color: '#A3888C'}}>Siti Wulandari</div>
-                        <div className="font-serif  text-xs lg:text-sm mt-5"  style={{color: '#A3888C'}}>Putri Bapak Badru dan Ibu Hermawati</div>
-                        <div className="font-serif  text-xs lg:text-sm"  style={{color: '#A3888C'}}>dan Bapak Apud dan Ibu Cucu</div>
+                        <div className="text-wedding text-5xl mt-5"  style={{color: '#667b68'}}>Siti Wulandari</div>
+                        <div className="font-serif  text-xs lg:text-sm mt-5"  style={{color: '#667b68'}}>Putri Bapak Badru dan Ibu Hermawati</div>
+                        <div className="font-serif  text-xs lg:text-sm"  style={{color: '#667b68'}}>dan Bapak Apud dan Ibu Cucu</div>
                       </div>
                     </div>
 
@@ -77,9 +77,9 @@ function CoupleSection() {
                           </div>
                         </div>
 
-                        <div className="text-wedding text-5xl mt-5"  style={{color: '#A3888C'}}>Bayu Firmansyah</div>
-                        <div className="font-serif  text-xs lg:text-sm mt-5"  style={{color: '#A3888C'}}>Putra Bapak Ujang Mulyana</div>
-                        <div className="font-serif  text-xs lg:text-sm"  style={{color: '#A3888C'}}>dan Ibu Heti Suyatdi</div>
+                        <div className="text-wedding text-5xl mt-5"  style={{color: '#667b68'}}>Bayu Firmansyah</div>
+                        <div className="font-serif  text-xs lg:text-sm mt-5"  style={{color: '#667b68'}}>Putra Bapak Ujang Mulyana</div>
+                        <div className="font-serif  text-xs lg:text-sm"  style={{color: '#667b68'}}>dan Ibu Heti Suyatdi</div>
                       </div>
                     </div>
                   </div>

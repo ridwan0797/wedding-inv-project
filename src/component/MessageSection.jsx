@@ -10,7 +10,7 @@ function MessageSection() {
   }, [])
 
   return (
-    <div className="w-full h-[500px] lg:h-[500px] flex justify-center items-center lg:mt-0" style={{backgroundColor: '#a3888c69'}}>
+    <div className="w-full h-[500px] lg:h-[500px] flex justify-center items-center lg:mt-0" style={{backgroundColor: '#a3b899'}}>
       <div 
         data-aos="fade-up"
         data-aos-offset="200"

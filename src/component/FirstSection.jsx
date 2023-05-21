@@ -33,7 +33,7 @@ function FirstSection() {
               data-aos-easing="ease-in-out" 
               className='my-7 md:my-16 lg:my-24'
             >
-              <div className='text-5xl md:text-7xl lg:text-[100px] text-center lg:text-left text-wedding color-core' style={{color: '#A3888C'}}>
+              <div className='text-5xl md:text-7xl lg:text-[100px] text-center lg:text-left text-wedding color-core' style={{color: '#667b68'}}>
                 Bayu & Wulan
               </div>
 

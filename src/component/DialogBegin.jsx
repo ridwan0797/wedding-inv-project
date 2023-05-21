@@ -57,7 +57,7 @@ const Dialog = ({ onClose }) => {
       <div style={contentStyle}>
         <h1 className='font-serif text-xs md:text-sm lg:text-lg tracking-[5px] lg:tracking-[9px]'>Undangan Pernikahan</h1>
         <h1 className='text-wedding text-[65px] md:text-[75px] lg:text-[100px] my-10'>Bayu & Wulan</h1>
-        <h1 className='text-lg font-serif italic'>Dear, {to || 'Tamu Undangan'}</h1>
+        <h1 className='text-lg font-serif italic'> {to || 'Tamu Undangan'}</h1>
         
         <div>
           <button className='buttonWelcome mt-5' onClick={handleButtonClick}>

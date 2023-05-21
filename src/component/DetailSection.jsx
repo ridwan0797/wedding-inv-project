@@ -27,7 +27,7 @@ function DetailSection({backgroundImage}) {
   
   return (
     <div>
-      <div className="w-full h-[700px] lg:h-[700px] justify-center items-center mt-16 md:mt-16 lg:mt-0 hidden md:flex lg:flex" style={{backgroundColor: '#a3888c69'}}>
+      <div className="w-full h-[700px] lg:h-[700px] justify-center items-center mt-16 md:mt-16 lg:mt-0 hidden md:flex lg:flex" style={{backgroundColor: '#a3b899'}}>
         <div 
           className='m-32 w-full h-[500px] bg-red-300 flex justify-end' 
           style={bgCaw}
@@ -50,7 +50,7 @@ function DetailSection({backgroundImage}) {
               </div>
 
               <div className='font-serif underline mt-12 cursor-pointer'>
-                <a href={googleMapUrl} target="_blank" rel="noopener noreferrer" style={{color: '#A3888C'}}>
+                <a href={googleMapUrl} target="_blank" rel="noopener noreferrer" style={{color: '#667b68'}}>
                   Lihat Lokasi
                 </a>
               </div>
@@ -60,7 +60,7 @@ function DetailSection({backgroundImage}) {
         </div> 
       </div>
 
-      <div className="w-full h-[800px] mt-16 justify-center items-center flex md:hidden lg:hidden" style={{backgroundColor: '#a3888c69'}}>
+      <div className="w-full h-[800px] mt-16 justify-center items-center flex md:hidden lg:hidden" style={{backgroundColor: '#a3b899'}}>
         <div 
           className='bg-white w-[90%] h-[500px] flex flex-col'
           data-aos="fade-left"
@@ -86,7 +86,7 @@ function DetailSection({backgroundImage}) {
               </div>
 
               <div className='font-serif underline mt-12 cursor-pointer'>
-                <a href={googleMapUrl} target="_blank" rel="noopener noreferrer" style={{color: '#A3888C'}}>
+                <a href={googleMapUrl} target="_blank" rel="noopener noreferrer" style={{color: '#667b68'}}>
                   Lihat Lokasi
                 </a>
               </div>
