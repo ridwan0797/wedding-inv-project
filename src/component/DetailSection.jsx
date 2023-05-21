@@ -67,7 +67,7 @@ function DetailSection({backgroundImage}) {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out" 
         >
-          <div style={bgCaw}>
+          <div className='flex-none h-[30%]' style={bgCaw}>
 
           </div>
 
@@ -79,7 +79,7 @@ function DetailSection({backgroundImage}) {
                 <div>Sabtu, 27 Mei 2023</div>
                 <div>10.00 - 15.00</div>
 
-                <div className='mt-4'>Surade, Kabupaten Sukabumi 39876</div>
+                <div className='mt-4'>4517 Villa Kenangan.</div>
                 <div>Surade, Kabupaten Sukabumi 39876.</div>
               </div>
 
