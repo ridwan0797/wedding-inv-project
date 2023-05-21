@@ -23,8 +23,16 @@ const SongCard = ({ audioRef }) => {
   useEffect(() => {
     const audioElement = audioRef.current;
 
-    if (isMobile()) {
-      setIsPlaying(false)
+    switch (isMobile()) {
+      case true:
+        setIsPlaying(false); // Jika web dibuka di mobile, set isPlaying ke false
+        break;
+      case false:
+        setIsPlaying(true); // Jika web tidak dibuka di mobile, set isPlaying ke true
+        break;
+      default:
+        setIsPlaying(false); // Default: set isPlaying ke false
+        break;
     }
 
     if (audioElement) {
@@ -46,9 +54,4 @@ const SongCard = ({ audioRef }) => {
   return (
     <div className="player shadow-md round-button" style={{ position: 'fixed', bottom: '2rem', left: '1rem', zIndex: '9999' }} onClick={togglePlay}>
       <div className="text-lg">{isPlaying ? '🔇' : '🔊'}</div>
-      <audio ref={audioRef} src="https://dl.dropboxusercontent.com/s/af7c00knl3mwl4v/sempurna.mp3" loop />
-    </div>
-  );
-};
-
-export default SongCard;
+      <audio ref={audioRef} src="
