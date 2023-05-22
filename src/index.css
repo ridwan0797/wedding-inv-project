@@ -87,8 +87,10 @@ code {
 .rounded-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
+  background-color: #0054FF;
+  transform: scale(1.5); /* Adjust the scale value as needed */
 }
 
 .scroll-to-top-button {

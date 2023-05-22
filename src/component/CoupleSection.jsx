@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import SectionTitle from "./SectionTitle";
 import BORDER from '../assets/border.png';
 import GROOM from '../assets/groom.jpg';
-import BRIDE from '../assets/bride.jpg';
+import BRIDE from '../assets/bride.jpeg';
 
 function CoupleSection() {
 
