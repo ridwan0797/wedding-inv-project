@@ -1,3 +1,9 @@
+## Wedding Invitation App
+This Project is created for my clients to create custom design wedding invitation digital, the project is using simple programming language such as ReactJs, and Tailwind CSS. no need backend, the app simplify to give the information about the events.
+
+Live Demo: [Link](https://bayu-wulan.netlify.app/)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
