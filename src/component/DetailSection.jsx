@@ -7,8 +7,8 @@ import SectionTitle from './SectionTitle';
 
 function DetailSection({backgroundImage}) {
   
-  const longitude = 107.6186; // Koordinat Longitudinal Gedung Sate
-  const latitude = -6.9024; // Koordinat Latitudinal Gedung Sate
+  const longitude = 106.716066; // Koordinat Longitudinal Gedung Sate
+  const latitude = -7.404857; // Koordinat Latitudinal Gedung Sate
   const googleMapUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
 
   useEffect(() => {
@@ -43,10 +43,12 @@ function DetailSection({backgroundImage}) {
 
               <div className='mt-5 font-serif text-gray-500'>
                 <div>Sabtu, 27 Mei 2023</div>
-                <div>10.00 - 15.00</div>
+                <div>09.00 - Selesai</div>
 
-                <div className='mt-4'>4517 Villa Kenangan.</div>
-                <div>Surade, Kabupaten Sukabumi 39876.</div>
+                <div className='mt-4'>Kediaman Mempelai Wanita.</div>
+                <div>Kp Pasir Pacet RT/RW 07/09.</div>
+                <div>Desa Buni Asih, Kec. Tegalbuleud.</div>
+                <div>Kab.Sukabumi, Jawa Barat.</div>
               </div>
 
               <div className='font-serif underline mt-12 cursor-pointer'>
@@ -79,10 +81,12 @@ function DetailSection({backgroundImage}) {
 
               <div className='mt-5 font-serif text-gray-500'>
                 <div>Sabtu, 27 Mei 2023</div>
-                <div>10.00 - 15.00</div>
+                <div>09.00 - Selesai</div>
 
-                <div className='mt-4'>4517 Villa Kenangan.</div>
-                <div>Surade, Kabupaten Sukabumi 39876.</div>
+                <div className='mt-4'>Kediaman Mempelai Wanita.</div>
+                <div>Kp Pasir Pacet RT/RW 07/09.</div>
+                <div>Desa Buni Asih, Kec. Tegalbuleud.</div>
+                <div>Kab.Sukabumi, Jawa Barat.</div>
               </div>
 
               <div className='font-serif underline mt-12 cursor-pointer'>
