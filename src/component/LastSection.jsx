@@ -13,7 +13,7 @@ const LastSection = () => {
   return (
     
     <div className='mt-[90px]'>
-      <div className="w-full h-[700px] md:h-[700px] lg:h-[500px] flex justify-center items-center mt-16 " style={{backgroundColor: '#a3b899'}}>
+      <div className="w-full h-[850px] md:h-[700px] lg:h-[700px] flex justify-center items-center mt-16 " style={{backgroundColor: '#a3b899'}}>
         <div className='font-serif text-[16px] md:text-lg lg:text-xl text-white font-medium'>
           <div className='text-wedding text-7xl'>
             Terima Kasih

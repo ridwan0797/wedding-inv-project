@@ -38,7 +38,7 @@ function FirstSection() {
               </div>
 
               <div className='ml-5 lg:ml-0 mt-2 lg:mt-2 text-center lg:text-left text-xs lg:text-xl font-sans text-gray-500'>
-              KAMI AKAN MENIKAH PADA HARI SABTU TANGGAL 27 MEI 2023
+              ACARA RESEPSI DILAKSANAKAN PADA HARI SABTU TANGGAL 27 MEI 2023
               </div>
 
               <div>
