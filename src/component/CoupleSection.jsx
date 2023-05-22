@@ -21,7 +21,7 @@ function CoupleSection() {
         <div className="absolute bottom-1 lg:bottom-3 w-auto"><img src={BORDER} alt='border' /></div>
 
         <div className="w-full h-auto flex  mt-2 lg:mt-2">
-          <div className="m-3 border w-full h-max lg:h-auto flex" style={{borderColor: '#D9CED0'}}>
+          <div className="m-3 border w-full h-max lg:h-auto flex" style={{borderColor: '#A3B899'}}>
             <div className="m-3 w-full h-auto flex">
               <div className="flex w-full justify-center">
                 <div className="flex flex-col">
