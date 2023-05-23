@@ -6,10 +6,7 @@ import BG from '../assets/bg.jpg'
 import SectionTitle from './SectionTitle';
 
 function DetailSection({backgroundImage}) {
-  
-  const longitude = 106.716066; // Koordinat Longitudinal Gedung Sate
-  const latitude = -7.404857; // Koordinat Latitudinal Gedung Sate
-  const googleMapUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+  const googleMapUrl = `https://www.google.com/maps/place/7%C2%B023'04.8%22S+106%C2%B041'29.4%22E/@-7.3846545,106.6893166,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-7.3846545!4d106.6915053?hl=en`;
 
   useEffect(() => {
     AOS.init()
